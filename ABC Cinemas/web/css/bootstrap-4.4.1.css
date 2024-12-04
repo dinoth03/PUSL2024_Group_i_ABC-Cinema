@@ -3220,6 +3220,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-menu {
+
   position: absolute;
   top: 100%;
   left: 0;
@@ -4248,6 +4249,7 @@ input[type="button"].btn-block {
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+
 }
 
 .nav-link.disabled {
@@ -4449,6 +4451,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-sm > .container,
+
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -4683,11 +4686,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -8638,6 +8641,7 @@ button.bg-dark:focus {
     margin: 3rem !important;
   }
   .mt-sm-5,
+
   .my-sm-5 {
     margin-top: 3rem !important;
   }
