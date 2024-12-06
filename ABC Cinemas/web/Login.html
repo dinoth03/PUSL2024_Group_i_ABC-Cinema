@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ABC Cinemas - Online Movie Tickets Booking</title>
+    <title>ABC Cinemas - Account Center </title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 	<!-- My CSS File -->
@@ -20,22 +20,21 @@
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item active"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
   	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
   	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
   	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
 			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="Seats.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="#" class="btn btn-outline-success my-2 my-sm-0">Login</a>
-			  <a href="#" class="btn btn-outline-success my-2 my-sm-0">Sign Up</a>
+		      <a href="#" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0 active">Login</a>
 	         </form>
         </div>
     </nav>
 	  <br><br><br><hr style="background-color: #303030;">
 	  
-	  <h2 style= "font-family: sans-serif; color: black; margin-right: 870px;"><center><b> Account </b></center></h2><br><br>
+	  <h2 style= "font-family: sans-serif; color: black; margin-right: 870px;"><center><b> Account Center </b></center></h2><br><br>
 	  
 	  <div class="container" id="container">
         <div class="form-container sign-up" id="formcon">
@@ -86,18 +85,18 @@
         </div>
     </div> <br><br>
 	  
-	<center><p style="color: #424242; margin-left: 250px; margin-right: 100px; text-align: justify; font-weight: bold; font-family: sans-serif; font-size: 15px;">Returning users please enter your login details to proceed to book your tickets online. New users can sign up and proceed with booking tickets.</p></center>
+	<p style="color: #424242; margin-left: 100px; margin-right: 100px; text-align: justify; font-weight: bold; font-family: sans-serif; font-size: 15px;">Returning users please enter your login details to proceed to book your tickets online. New users can sign up and proceed with booking tickets.</p>
 	  
 <div class="row row3">
   <div class="col-xl-5"> <br>
 		  <h5 style=" font-family: sans-serif;"> To always be informed!</h5> 
 			<h2 style="font-family: 'cooper-black-std';"><b>Sign up for</b></h2> <h4 style=" font-family: sans-serif;">get all our Deals and Offers.</h4>
-			<a href="#" class="btn btn-primary">SUBSCRIBE</a><br><br>
+			<a href="Login.html" class="btn btn-primary">SUBSCRIBE</a><br><br>
 		    <p style=" font-family: sans-serif; font-size: 12px;">@2024 ABC Cinemas All Rights © Reserved.<br> Developed by Group - i</p>
 	  </div>
 		    	
 	  <div class="col-xl-2"><br>
-		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html">Feedback</a></h5> <br>
+		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html#feedback">Feedback</a></h5> <br>
 		  <h6 style=" font-family: sans-serif;"> Digital (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Gold (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
@@ -110,8 +109,8 @@
 		  <h6><a href="Movies.html">Movies</a></h6>
 		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
 		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
-		  <h6><a href="Home Page.html">Privacy Policies</a></h6> 
-		  <h6><a href="Home Page.html">Terms & Conditions</a></h6>
+		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.html">Terms & Conditions</a></h6>
 	  </div>
 		
       <div class="col-xl-2"> <br>
@@ -122,22 +121,23 @@
       </div>
     </div>
 	  
-	  <script>
-	   const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
+    <!-- toggler changing -->
+	<script>
+	    const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
 
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-});
+        registerBtn.addEventListener('click', () => {
+        container.classList.add("active");
+        });
 
-loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
-});
-	  </script>
+        loginBtn.addEventListener('click', () => {
+        container.classList.remove("active");
+        });
+	</script>
 	  
 	  <!-- Navbar Shading -->
-  <script>
+    <script>
 	    window.addEventListener("scroll", function() {
         const navbar = document.querySelector(".navbar");
         if (window.scrollY > 50) {
