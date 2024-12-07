@@ -28,7 +28,7 @@
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item active"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
   	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
   	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
   	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
@@ -196,10 +196,10 @@
 
       	if (ticket.checked) {
         count += 1;
-        amount += 1200;
+        amount += 1200.00;
 		} else {
         count -= 1;
-        amount -= 1200;
+        amount -= 1200.00;
 			   }
 
 			   document.querySelector(".amount").innerHTML = amount;
@@ -262,6 +262,28 @@
     		titleElement.textContent = movieName;
 		}
 	</script>
+	  
+	  <script>
+document.getElementById('seat').addEventListener('click', function() {
+    const selectedDate = document.querySelector(".dates input:checked").id;
+    const selectedTime = document.querySelector(".times input:checked").id;
+    const movieName = getQueryParam('movie'); // Get the movie name from the URL
+    const seatCount = document.querySelector(".count").innerText; // Seat count
+    const totalPrice = document.querySelector(".amount").innerText; // Total price
+    
+    // Check if any seats have been selected
+    const selectedSeats = document.querySelectorAll(".all-seats input:checked");
+    if (selectedSeats.length === 0) {
+        // If no seats are selected, show an alert
+        alert("Please select at least one seat to proceed.");
+        return; // Prevent the redirection to the payment page
+    }
+
+    // Redirect to Payment.html with query parameters
+    window.location.href = `payment.html?movie=${movieName}&seats=${seatCount}&totalPrice=${totalPrice}`;
+});
+
+	  </script>
 
 	  
 
