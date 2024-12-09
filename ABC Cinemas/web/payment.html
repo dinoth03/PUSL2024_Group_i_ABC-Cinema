@@ -32,7 +32,7 @@
         </div>
     </nav>
 	  <br><br><br><hr style="background-color: #303030;">
-	  <h2 style= "font-family: sans-serif; color: black; margin-right: 870px;"><center><b> Payment </b></center></h2>
+	  <h2 style= "font-family: sans-serif; color: black; margin-right: 600px;"><center><b> Payment </b></center></h2><br>
 	
  		<div class="container">
         <div class="section">
@@ -40,7 +40,7 @@
             <div class="receipt">
                 <p id="movie_name"><b>Movie Name:</b> </p>
                 <p id="seats"><b>Seats:</b> </p>
-                <p>Price per Seat: LKR.1200.00</p>
+                <p>Price per Seat: LKR.1200.00</p> <br>
                 <p class="total" id="total_price"><b>Total Price:</b></p>
             </div>
         </div>
@@ -70,17 +70,10 @@
            	   </div> <br>
 			
 			<input type="checkbox" id="check1" required>
-            <label for="check1">I agree to the <a href="#" id="tnm">Terms & Conditions</a></label>
+            <label for="check1">I agree to the <a href="Terms.html" id="tnm">Terms & Conditions</a></label>
 				
         </div>
     	</div>
-
-    	<!-- Include the PayPal JavaScript SDK -->
-   			 <script src="https://www.paypal.com/sdk/js?client-id=AS8svvryxGm8WdNhTp-2NZJcHdVJvTfTEfQB6w7yij6sfRCsHd-6pBiHe61dv7UrQ_x04bcaZ-j_OkBo&currency=USD"></script>
-	  			<!-- This is ABCCinemas App under ABCCinemas Sandbox Account -->
-	  			<!-- Username & Password for the sandbox account of the site -->
-	  			<!-- Email :- CinemasABC@gmail.com  /  Password :- ABC@cinemas -->
-
     
 
 	   <div class="row row3">
@@ -130,6 +123,12 @@
       </script>
 	  
 	  <!-- PayPal Sandbox Configuration Load -->
+	   <!-- Include the PayPal JavaScript SDK -->
+	   <script src="https://www.paypal.com/sdk/js?client-id=AS8svvryxGm8WdNhTp-2NZJcHdVJvTfTEfQB6w7yij6sfRCsHd-6pBiHe61dv7UrQ_x04bcaZ-j_OkBo&currency=USD"></script>
+	   <!-- This is ABCCinemas App under ABCCinemas Sandbox Account -->
+	   <!-- Username & Password for the sandbox account of the site -->
+	   <!-- Email :- CinemasABC@gmail.com  /  Password :- ABC@cinemas -->
+		
 	  <script>
         // Render the PayPal button into #paypal-button-container
         paypal.Buttons({
