@@ -11,6 +11,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/png" href="images/title image.png">
 	<link href="css/Movies.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
 	  
@@ -26,7 +27,7 @@
 			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="#" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
 		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
 	         </form>
         </div>
@@ -34,8 +35,15 @@
 	  <br>
 	  <br>
 	  <br><hr>
-      <h3 style= "font-family: sans-serif; color: white; margin-right: 870px;"><center><b> NOW SHOWING </b></center></h3><br>
+      <h3 style= "font-family: sans-serif; color: white; margin-right: 870px;"><center><b> NOW SHOWING </b></center></h3>
+	  
 	  <div class="container">
+		  
+		  	<div class="search-container">
+		 <i class="fas fa-search"></i>
+         <input type="text" id="movieSearch" placeholder="Search for a movie..." onkeyup="filterMovies()">
+    </div> <br>
+
 	    <div class="row row10">
 	      <div class="col-xl-3">
 	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 1.jpg" alt="Card image cap">
@@ -47,8 +55,8 @@
 	      <div class="col-xl-3">
 	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 2.jpg" alt="Card image cap">
 	          <div class="card-body">
-	            <h5 class="card-title"><b>Wild Robot</b></h5> <br>
-	            <a href="Seats.html?movie=Wild Robot" class="btn btn-primary">Buy Tickets</a> </div>
+	            <h5 class="card-title"><b>The Wild Robot</b></h5> <br>
+	            <a href="Seats.html?movie=The Wild Robot" class="btn btn-primary">Buy Tickets</a> </div>
             </div>
 	      </div>
 	      <div class="col-xl-3">
@@ -117,7 +125,7 @@
             <div class="card col-md-4 col-xl-12"> <img class="card-img-top" src="images/card 13.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"><b>Deadpool & Wolverine</b></h5>
-                <a href="Seats.html?movie=Deadpool & Wolverine" class="btn btn-primary">Buy Tickets</a> </div>
+                <a href="Seats.html?movie=Deadpool and Wolverine" class="btn btn-primary">Buy Tickets</a> </div>
             </div>
           </div>
           <div class="col-xl-3">
@@ -186,10 +194,10 @@
 		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Imax (2d), Imax (3d) </h6> 
 		  <h5 style=" font-family: sans-serif;">New&nbsp;<a href="#" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'; color: darkblue; font-size: 25px;">IMAX</a>&nbsp;Experience</h5>
-  </div>
+  	  </div>
 		
 	  <div class="col-xl-2"> <br>
-		  <h5><a href="Home Page.html">Buy Tickets</a></h5> <br>
+		  <h5><a href="Buy.html">Buy Tickets</a></h5> <br>
 		  <h6><a href="Movies.html">Movies</a></h6>
 		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
 		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
@@ -216,6 +224,24 @@
         }
         });
     </script>
+	  
+	  <!-- JS for Search bar searching -->
+    <script>
+		function filterMovies() {
+		const searchInput = document.getElementById("movieSearch").value.toLowerCase();
+    	const movieCards = document.querySelectorAll(".card");
+
+    	movieCards.forEach(card => {
+        const movieTitle = card.querySelector(".card-title").innerText.toLowerCase();
+        	if (movieTitle.includes(searchInput)) {
+				card.parentElement.style.display = ""; // Show card
+        	} else {
+            	card.parentElement.style.display = "none"; // Hide card
+        	}
+    	});
+		}
+	</script>
+
 
 </body>
 </html>
