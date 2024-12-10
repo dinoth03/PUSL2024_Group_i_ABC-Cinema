@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* first row */
+.container .row.row10 {
+	background-color: black;
+	color: white;
+}
+.row.row10 .col-xl-3 .card.col-md-4.col-xl-12 {
+	background-color: black;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+	border-radius: 0px;
+}
+.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top {
+	transition: transform 0.3s ease;
+	border-radius: 0px;
+}
+.row.row10 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
+	transform: scale(1.1);
+}
+.card.col-md-4.col-xl-12 .card-body .btn.btn-primary {
+	border-radius: 0;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+.card.col-md-4.col-xl-12 .card-body .btn.btn-primary:hover{
+	background-color: #00008B;
+}
+
+/* second row */
+.container .row.row11 {
+	background-color: black;
+	color: white;
+}
+.row.row11 .col-xl-3 .card.col-md-4.col-xl-12 {
+	background-color: black;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+	border-radius: 0px;
+}
+.row.row11 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
+	transform: scale(1.1);
+}
+
+.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top{
+	transition: transform 0.3s ease;
+}
+
+/* third row */
+.container .row.row12 {
+	background-color: black;
+	color: white;
+}
+.row.row12 .col-xl-3 .card.col-md-4.col-xl-12 {
+	background-color: black;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+	border-radius: 0px;
+}
+.row.row12 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
+	transform: scale(1.1);
+}
+.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top{
+	transition: transform 0.3s ease;
+}
+
+/* fourth row */
+.container .row.row14 {
+	background-color: black;
+	color: white;
+}
+.row.row14 .col-xl-3 .card.col-md-4.col-xl-12 {
+	background-color: black;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+	border-radius: 0px;
+}
+.row.row14 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
+	transform: scale(1.1);
+}
+.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top{
+	transition: transform 0.3s ease;
+}
+
+/* Search bar */
+.search-container{
+  	display: flex;
+    align-items: center;
+  	justify-content: center;
+  	background-color: #2d2d2d;
+  	border-radius: 20px;
+  	padding: 5px 10px;
+  	max-width: 600px;
+  	margin: 20px auto;
+  	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	margin-top: 35px;
+}
+.search-container i{
+	color: white;
+	margin-left: 3px;
+	font-size: 15px;
+}
+.search-container input[type="text"]{
+  	flex-grow: 1;
+  	border: none;
+  	outline: none;
+  	background: transparent;
+  	color: white;
+  	padding: 10px;
+  	font-size: 16px;
+}
+.search-container input::placeholder{
+	color: #a0a0a0;
+}
+.search-container input:focus{
+	outline: none;
+}

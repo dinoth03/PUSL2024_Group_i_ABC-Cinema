@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Cinemas - Online Movie Tickets Booking</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<!-- My CSS File -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="images/title image.png">
+	<link href="css/Buy.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+	  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="Home Page.html"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
+		
+  	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  	      <ul class="navbar-nav mr-auto">
+  	        <li class="nav-item active"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
+          </ul>
+			 <form class="form-inline my-2 my-lg-0">
+		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+	         </form>
+        </div>
+    </nav>
+	  <br><br><br><hr>
+	  
+	 <div class="search-container">
+		 <i class="fas fa-search"></i>
+        <input type="text" id="movieSearch" placeholder="Search for a movie..." onkeyup="filterMovies()">
+    </div> <br>
+	  
+	  	  <div class="container">
+	    <div class="row row10">
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 1.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Venom: The Last Dance</b></h5>
+	            <a href="Seats.html?movie=Venom: The Last Dance" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 2.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Wild Robot</b></h5> <br>
+	            <a href="Seats.html?movie=Wild Robot" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 3.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Red One</b></h5> <br>
+	            <a href="Seats.html?movie=Red One" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 4.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>It Ends With Us</b></h5> <br>
+	            <a href="Seats.html?movie=It Ends With Us" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+        </div> <br>
+		  
+	    <div class="row row11">
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 5.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Smile 2</b></h5> <br>
+	            <a href="Seats.html?movie=Smile 2" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 6.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Kanguwa</b></h5> <br>
+	            <a href="Seats.html?movie=Kanguwa" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 7.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Singham Again</b></h5> <br>
+	            <a href="Seats.html?movie=Singham Again" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+	      <div class="col-xl-3">
+	        <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 8.jpg" alt="Card image cap">
+	          <div class="card-body">
+	            <h5 class="card-title"><b>Transformers One</b></h5> <br>
+	            <a href="Seats.html?movie=Transformers One" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+	      </div>
+        </div> <br>
+		  
+        <div class="row row12">
+          <div class="col-xl-3">
+            <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 9.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><b>Amaran</b></h5> <br>
+                <a href="Seats.html?movie=Amaran" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card col-md-4 col-xl-12"> <img class="card-img-top img-fluid" src="images/card 11.jpg" alt="Card image cap">
+              <div class="card-body">
+				  <h5 class="card-title"><b>Pushpa 2</b></h5>
+                <a href="Seats.html?movie=Pushpa 2" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card col-md-4 col-xl-12"> <img class="card-img-top" src="images/card 13.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><b>Deadpool & Wolverine</b></h5>
+                <a href="Seats.html?movie=Deadpool & Wolverine" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card col-md-4 col-xl-12"> <img class="card-img-top" src="images/card 12.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><b>Bhool Bhulaiyaa 3</b></h5> <br>
+                <a href="Seats.html?movie=Bhool Bhulaiyaa 3" class="btn btn-primary">Buy Tickets</a> </div>
+            </div>
+          </div>
+        </div> <br>
+		  
+	    <div class="row row14">
+		    <div class="col-xl-3">
+		      <div class="card col-md-4 col-xl-12"> <img class="card-img-top" src="images/card 14.jpg" alt="Card image cap">
+		        <div class="card-body">
+		          <h5 class="card-title"><b>Visal Adare</b></h5>
+		          <a href="Seats.html?movie=Visal Adare" class="btn btn-primary">Buy Tickets</a> </div>
+	          </div>
+		    </div>
+		    <div class="col-xl-3">
+		      <div class="card col-md-4 col-xl-12"> <img class="card-img-top" src="images/card 10.jpg" alt="Card image cap">
+		        <div class="card-body">
+		          <h5 class="card-title"><b>Oppenheimer :- Special Showing in</b></h5> <h5 style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'; color: darkblue; font-size: 25px;">Imax</h5>
+		          <a href="Seats.html?movie=Oppenheimer" class="btn btn-primary">Buy Tickets</a> </div>
+	          </div>
+		    </div>
+	      <div class="col-xl-3"></div>
+		    <div class="col-xl-3"></div>
+	    </div>
+	  </div> 
+	  
+	  
+	  <div class="row row3">
+      <div class="col-xl-5"> <br>
+		  <h5 style=" font-family: sans-serif;"> To always be informed!</h5> 
+			<h2 style="font-family: 'cooper-black-std';"><b>Sign up for</b></h2> <h4 style=" font-family: sans-serif;">get all our Deals and Offers.</h4>
+			<a href="Login.html" class="btn btn-primary">SUBSCRIBE</a><br><br>
+		    <p style=" font-family: sans-serif; font-size: 12px;">@2024 ABC Cinemas All Rights © Reserved.<br> Developed by Group - i</p>
+	  </div>
+		    	
+	  <div class="col-xl-2"><br>
+		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html#feedback">Feedback</a></h5> <br>
+		  <h6 style=" font-family: sans-serif;"> Digital (2d), (3d) </h6>
+		  <h6 style=" font-family: sans-serif;"> Gold (2d), (3d) </h6>
+		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
+		  <h6 style=" font-family: sans-serif;"> Imax (2d), Imax (3d) </h6> 
+		  <h5 style=" font-family: sans-serif;">New&nbsp;<a href="#" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'; color: darkblue; font-size: 25px;">IMAX</a>&nbsp;Experience</h5>
+	       </div>
+		
+	  <div class="col-xl-2"> <br>
+		  <h5><a href="Home Page.html">Buy Tickets</a></h5> <br>
+		  <h6><a href="Movies.html">Movies</a></h6>
+		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
+		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
+		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.html">Terms & Conditions</a></h6>
+	  </div>
+		
+      <div class="col-xl-2"> <br>
+		  <center><img src="images/New Logo white.png" alt="" height="100px" width="280px"></center> <br>
+		  <center> <a href="#"><img src="images/instagram icon.png" width="48" height="46" alt=""></a> 
+				  <a href="#"><img src="images/fcebook icon.png" width="45" height="43" alt=""></a>
+				  <a href="#"><img src="images/X icon.png" width="45" height="43" alt=""></a> </center>
+      </div>
+    </div>
+	 
+	<script>
+        function filterMovies() {
+            const query = document.getElementById('movieSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                if (title.includes(query)) {
+                    card.parentElement.style.display = '';
+                } else {
+                    card.parentElement.style.display = 'none';
+                }
+            });
+        }
+    </script> 
+	  
+
+
+	  
+
+  
+	  
+	  	<!-- Navbar Shading -->
+    <script>
+	    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+        } else {
+        navbar.classList.remove("scrolled");
+        }
+        });
+    </script>
+	  
+</body>
+</html>
