@@ -433,5 +433,21 @@ body hr {
 	color: white;
 }
 
+/* Snow Flakes */
+.snowflake {
+	position: absolute;
+	top: -10px;
+	color: white;
+	font-size: 1rem;
+	animation: fall linear infinite;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(110vh);
+		opacity: 0;
+	}
+}
+
 
  
