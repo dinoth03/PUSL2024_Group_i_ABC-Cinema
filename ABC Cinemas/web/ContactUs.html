@@ -158,13 +158,52 @@
 			}
     </script>
 	
-	<!-- JS for Opening the App list in the User device -->
+	<!-- JS for Opening the App list in the User device for each Phone Number -->
     <script>
         function openTelLink() {
         // This will trigger the app picker
         window.location.href = "tel:+94 72 502 6115";
         }
     </script>
+
+	<script>
+		function openTelLink() {
+		// This will trigger the app picker
+		window.location.href = "tel:+94 75 850 2154";
+		}
+	</script>
+
+	<script>
+		function openTelLink() {
+		// This will trigger the app picker
+		window.location.href = "tel:+94 11 2 800 574";
+		}
+	</script>
+
+	<script>
+		function openTelLink() {
+		// This will trigger the app picker
+		window.location.href = "tel:+94 11 2 500 874";
+		}
+	</script>
+
+	<!-- Smooth Scrolling to Feedback -->
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+	</style>
+			
+	<script>
+	    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+		 behavior: 'smooth'
+		 });
+		});
+		});
+	</script>
 	  
 	<!-- JS for Star Clicker -->
 	<script>
@@ -183,7 +222,7 @@
        });
       });
      });
-
 	</script>
+	
 </body>
 </html>
