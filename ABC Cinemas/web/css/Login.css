@@ -213,3 +213,17 @@ body{
     transform: translateX(200%);
 }
 
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #2078b4;
+    font-size: 1rem;
+    animation: fall linear infinite;
+    }
+    
+    @keyframes fall {
+    to {
+      transform: translateY(110vh);
+      opacity: 0;
+    }
+    }

@@ -147,6 +147,27 @@
         }
         });
     </script>
+
+        	<!-- Snow Flakes -->   
+	  <script>
+        const snowflakeCount = 100; // Number of snowflakes
+        const snowflakeSymbols = ["❄", "❅", "❆"]; // Snowflake shapes
+    
+        for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
+    
+            const size = Math.random() * 1.5 + 0.5; // Random size
+            snowflake.style.fontSize = size + "rem";
+    
+            snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+            snowflake.style.animationDuration = Math.random() * 3 + 5 + "s"; // Random speed 3+1=high / 3+8=low
+            snowflake.style.opacity = Math.random();
+    
+            document.body.appendChild(snowflake);
+        }
+        </script>
 	  
 </body>
 </html>
