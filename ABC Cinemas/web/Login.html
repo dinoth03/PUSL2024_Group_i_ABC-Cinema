@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ABC Cinemas - Account Center </title>
+    <title>ABC Cinemas - Login | Account Center</title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 	<!-- My CSS File -->
@@ -28,7 +28,7 @@
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
 		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0 active">Login</a>
+		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
 	         </form>
         </div>
     </nav>
@@ -85,7 +85,7 @@
         </div>
     </div> <br><br>
 	  
-	<p style="color: #424242; margin-left: 250px; margin-right: 100px; text-align: justify; font-weight: bold; font-family: sans-serif; font-size: 15px;">Returning users please enter your login details to proceed to book your tickets online. New users can sign up and proceed with booking tickets.</p>
+	<center><p style="color: #424242; margin-left: 250px; margin-right: 100px; text-align: justify; font-weight: bold; font-family: sans-serif; font-size: 15px;">Returning users please enter your login details to proceed to book your tickets online. New users can sign up and proceed with booking tickets.</p></center>
 	  
 <div class="row row3">
   <div class="col-xl-5"> <br>
@@ -121,23 +121,42 @@
       </div>
     </div>
 	  
-    <!-- toggler changing -->
-	<script>
-	    const container = document.getElementById('container');
-        const registerBtn = document.getElementById('register');
-        const loginBtn = document.getElementById('login');
+	  <div id="preloader">
+         <center> <img src="images/New Logo white.png" alt="" height="120" width="380"></center> <br>
+	     <div class="loader"></div>
+      </div>
+	  
+	  <script>
+	   	  const container = document.getElementById('container');
+		  const registerBtn = document.getElementById('register');
+		  const loginBtn = document.getElementById('login');
 
-        registerBtn.addEventListener('click', () => {
-        container.classList.add("active");
-        });
+		  registerBtn.addEventListener('click', () => {
+    		container.classList.add("active");
+		  });
 
-        loginBtn.addEventListener('click', () => {
-        container.classList.remove("active");
-        });
+		  loginBtn.addEventListener('click', () => {
+    		container.classList.remove("active");
+		  });
+	  </script>
+	  
+	  	<!-- Pre loader -->
+    <script>
+	 	window.addEventListener("load", function () {
+  		const preloader = document.getElementById("preloader");
+  		const mainContent = document.getElementById("main-content");
+
+		setTimeout(() => {
+    	preloader.style.display = "none"; // Hide preloader
+    	mainContent.style.display = "block"; // Show main content
+		}, 1000); // Adjust delay as needed (1000ms = 1 second)
+		});
+		
+		const navbar = document.getElementById('navbar');
 	</script>
 	  
 	  <!-- Navbar Shading -->
-    <script>
+  <script>
 	    window.addEventListener("scroll", function() {
         const navbar = document.querySelector(".navbar");
         if (window.scrollY > 50) {
@@ -148,5 +167,25 @@
         });
     </script>
 	  
+		<!-- Snow Flakes -->   
+	<script>
+        const snowflakeCount = 100; // Number of snowflakes
+        const snowflakeSymbols = ["❄", "❅", "❆"]; // Snowflake shapes
+
+        for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
+
+            const size = Math.random() * 1.5 + 0.5; // Random size
+            snowflake.style.fontSize = size + "rem";
+
+            snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+            snowflake.style.animationDuration = Math.random() * 3 + 5 + "s"; // Random speed 3+1=high / 3+8=low
+            snowflake.style.opacity = Math.random();
+
+            document.body.appendChild(snowflake);
+        }
+    </script>
 </body>
 </html>

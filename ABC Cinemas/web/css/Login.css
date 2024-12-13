@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
     background-color: #0096FF;
     background: linear-gradient(to right, #e2e2e2, #D5ECFF);
+   /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; */
 }
 
 #container{
@@ -211,5 +217,21 @@ body{
 
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+/* Snow Flakes */
+.snowflake {
+	position: absolute;
+	top: -10px;
+	color: #2078B4;
+	font-size: 1rem;
+	animation: fall linear infinite;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(110vh);
+		opacity: 0;
+	}
 }
 
