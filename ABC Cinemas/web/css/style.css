@@ -7,7 +7,6 @@ body hr {
 background-color: white;
 }
 
-
 /* Coming Soon Image Slider */
 .slider {
   height: 600px;
@@ -269,12 +268,41 @@ background-color: #00008B;
 
 /* Subscribe Button */
 .row .col-xl-5 .btn.btn-primary {
-border-radius: 0;
-padding-bottom: 1px;
-padding-top: 1px;
+	border-radius: 0;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	cursor: pointer;
+  	position: relative;
+	border: 2px solid rgb(0, 0, 139, 1);
+	background-color: transparent;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.row .col-xl-5 .btn.btn-primary::before{
+	content: '';
+  	position: absolute;
+  	inset: 0;
+  	margin: auto;
+  	width: 50px;
+  	height: 50px;
+  	border-radius: inherit;
+  	scale: 0;
+  	z-index: -1;
+  	background-color: rgb(0, 0, 139, 1);
+  	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.row .col-xl-5 .btn.btn-primary:hover::before{
+	scale: 3;
 }
 .row .col-xl-5 .btn.btn-primary:hover{
-background-color: #00008B;
+	background-color: #00008B;
+	scale: 1.1;
+    box-shadow: 0 0px 20px rgba(0, 0, 139, 1);
+}
+.row .col-xl-5 .btn.btn-primary:active{
+	scale: 1;
 }
 
 /* Social Icon Transition */
