@@ -130,5 +130,64 @@ body {
     background-color: #0056b3;
  }
 
+/* New Effect */
+#cd{
+	transition: .5s ease;
+}
+#cd:focus, #cd:hover{
+	outline: none;
+	border-color: rgba(129, 140, 248);
+	background-color: #fff;
+	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
 
+#ex{
+	transition: .5s ease;
+}
+#ex:focus, #ex:hover{
+	outline: none;
+	border-color: rgba(129, 140, 248);
+	background-color: #fff;
+	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+#cvv{
+	transition: .5s ease;	
+}
+#cvv:focus, #cvv:hover{
+	outline: none;
+	border-color: rgba(129, 140, 248);
+	background-color: #fff;
+	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+#fname{
+  transition: .5s ease;
+}
+#fname:focus, #fname:hover{
+  outline: none;
+	border-color: rgba(129, 140, 248);
+	background-color: #fff;
+	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+#lname{
+  transition: .5s ease;
+}
+#lname:focus, #lname:hover{
+  outline: none;
+	border-color: rgba(129, 140, 248);
+	background-color: #fff;
+	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+#email{
+  transition: .5s ease;
+}
+#email:focus, #email:hover{
+  outline: none;
+	border-color: rgba(129, 140, 248);
+	background-color: #fff;
+	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
 

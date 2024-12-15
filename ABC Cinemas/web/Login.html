@@ -120,6 +120,11 @@
 				  <a href="#"><img src="images/X icon.png" width="45" height="43" alt=""></a> </center>
       </div>
     </div>
+
+    <div id="preloader">
+        <center> <img src="images/New Logo white.png" alt="" height="120" width="380"></center> <br>
+        <div class="loader"></div>
+     </div>
 	  
     <!-- toggler changing -->
 	<script>
@@ -149,7 +154,7 @@
     </script>
 
         	<!-- Snow Flakes -->   
-	  <script>
+	<script>
         const snowflakeCount = 100; // Number of snowflakes
         const snowflakeSymbols = ["❄", "❅", "❆"]; // Snowflake shapes
     
@@ -167,7 +172,22 @@
     
             document.body.appendChild(snowflake);
         }
-        </script>
+    </script>
+
+    <!-- Pre loader -->
+	<script>
+		window.addEventListener("load", function () {
+		const preloader = document.getElementById("preloader");
+		const mainContent = document.getElementById("main-content");
+	   
+		setTimeout(() => {
+		preloader.style.display = "none"; // Hide preloader
+		mainContent.style.display = "block"; // Show main content
+		}, 1000); // Adjust delay as needed (1000ms = 1 second)
+		});
+			   
+		const navbar = document.getElementById('navbar');
+	</script>
 	  
 </body>
 </html>
