@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,20 +15,21 @@
   </head>
   <body>
 	  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="Home Page.html"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.jsp"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
 		
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item active"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
+  	        <li class="nav-item active"> <a class="nav-link" href="HomePage.jsp">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Movies.jsp">MOVIES</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.jsp">DEALS AND OFFERS</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Location.jsp">LOCATION</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="AboutUs.jsp">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+		      <a href="Buy.jsp" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		      
 	         </form>
         </div>
     </nav>
@@ -48,7 +51,7 @@
           <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/Venow now showing.png" alt="Second slide" width="1550" height="250">
             <div class="carousel-caption">
               <h3><b>Now Showing IMAX- Venom : The Last Dance</b></h3>
-              <h5><a href="Seats.html?movie=VENOM: THE LAST DANCE">Book your own Seat</a></h5>
+              <h5><a href="Seats.jsp?movie=VENOM: THE LAST DANCE">Book your own Seat</a></h5>
             </div>
           </div>
           <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/display 5.jpg" alt="Third slide" width="1550" height="250">
@@ -75,9 +78,9 @@
           <div class="col-lg-3">
             <div class="card col-md-4 col-lg-12"> <img src="images/card 2.jpg" alt="Card image cap" height="800" class="card-img-top img-fluid">
               <div class="card-body">
-                <h5 class="card-title"><b>WILD ROBOT</b></h5>
+                <h5 class="card-title"><b>THE WILD ROBOT</b></h5>
                 <p class="card-text">After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.</p>
-              <a href="Seats.html?movie=WILD ROBOT" class="btn btn-primary">BOOK NOW</a> </div>
+              <a href="Seats.html?movie=THE WILD ROBOT" class="btn btn-primary">BOOK NOW</a> </div>
             </div>
           </div>
           <div class="col-lg-3">
@@ -133,7 +136,7 @@
           </div>
 	    </div>
       </div> <br>
-	  <a href="Movies.html" id="ViewMovies" class="btn btn-primary" ><b>View All Movies</b></a>
+	  <a href="Movies.jsp" id="ViewMovies" class="btn btn-primary" ><b>View All Movies</b></a>
       <br>
 	  <hr>
 	  <br>
@@ -152,10 +155,10 @@
 	  
 	  <h3 style= "font-family: sans-serif; color: white; margin-right: 800px;"><center><b>DEALS & OFFERS</b></center></h3> <br><br>
 	  
-    <div class="row row4">
-	    <div class="col-xl-9"><img class="d-block mx-auto img-fluid" src="images/ChristmasDeal.png" alt="" width="900px" height="450px" style="margin-left: 40px;"></div>
-	    <div class="col-xl-3"><h1 style="color:#000093; margin-right: 45px; margin-top: 70px; "><b>ABC Christmas!</b></h1> <h4 style="color: white; "> Celebrate this Christmas with ABC Cinemas.</h4> 
-		<h4 style="color: white; margin-right: 55px;">Enjoy 10% discount on all movies. This is only till 28th of December.</h4> <br>
+	  <div class="row row4">
+	    <div class="col-xl-9"><img class="d-block mx-auto img-fluid" src="images/Deals 02.jpg" alt="" width="900px" height="450px" style="margin-left: 40px;"></div>
+	    <div class="col-xl-3"><h1 style="color:#000093; margin-right: 45px; margin-top: 70px; "><b>Get 3 Tickets!</b></h1> <h4 style="color: white; "> On Movie Tickets with your Credit Card.</h4> 
+			<h4 style="color: white; margin-right: 55px;">Movie Ticket Offers - Promo Codes, Deals & Discount Coupons Today by ABC Cinemas.</h4> <br>
 		    <a href="DealsOffers.html" id="Moredeals" class="btn btn-primary">More Deals & Offers</a>
 		  </div>
       </div> <br>
@@ -178,7 +181,7 @@
 	  </div>
 		    	
 	  <div class="col-xl-2"><br>
-		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html#feedback">Feedback</a></h5> <br>
+		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.jsp">Feedback</a></h5> <br>
 		  <h6 style=" font-family: sans-serif;"> Digital (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Gold (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
@@ -187,12 +190,12 @@
 	       </div>
 		
 	  <div class="col-xl-2"> <br>
-		  <h5><a href="Buy.html.html">Buy Tickets</a></h5> <br>
-		  <h6><a href="Movies.html">Movies</a></h6>
-		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
-		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
-		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
-		  <h6><a href="Terms.html">Terms & Conditions</a></h6>
+		  <h5><a href="Buy.jsp">Buy Tickets</a></h5> <br>
+		  <h6><a href="Movies.jsp">Movies</a></h6>
+		  <h6><a href="DealsOffers.jsp">All Deals</a></h6> 
+		  <h6><a href="ContactUs.jsp">Contact Us</a></h6> 
+		  <h6><a href="Terms.jsp]#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.jsp">Terms & Conditions</a></h6>
 	  </div>
 		
       <div class="col-xl-2"> <br>
@@ -277,26 +280,26 @@
         }
         });
     </script>
+    
+        <!-- Snow Flakes -->   
+	<script>
+        const snowflakeCount = 100; // Number of snowflakes
+        const snowflakeSymbols = ["❄", "❅", "❆"]; // Snowflake shapes
 
-    	<!-- Snow Flakes -->   
-	  <script>
-    const snowflakeCount = 100; // Number of snowflakes
-    const snowflakeSymbols = ["❄", "❅", "❆"]; // Snowflake shapes
+        for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
 
-    for (let i = 0; i < snowflakeCount; i++) {
-        const snowflake = document.createElement("div");
-        snowflake.classList.add("snowflake");
-        snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
+            const size = Math.random() * 1.5 + 0.5; // Random size
+            snowflake.style.fontSize = size + "rem";
 
-        const size = Math.random() * 1.5 + 0.5; // Random size
-        snowflake.style.fontSize = size + "rem";
+            snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+            snowflake.style.animationDuration = Math.random() * 3 + 5 + "s"; // Random speed 3+1=high / 3+8=low
+            snowflake.style.opacity = Math.random();
 
-        snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
-        snowflake.style.animationDuration = Math.random() * 3 + 5 + "s"; // Random speed 3+1=high / 3+8=low
-        snowflake.style.opacity = Math.random();
-
-        document.body.appendChild(snowflake);
-    }
+            document.body.appendChild(snowflake);
+        }
     </script>
 
   <!-- External JS connections -->

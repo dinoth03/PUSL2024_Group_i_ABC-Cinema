@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,20 +18,21 @@
   </head>
   <body>
 	  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="Home Page.html"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.jsp"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
 		
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item active"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="index.jsp">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Movies.jsp">MOVIES</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.jsp">DEALS AND OFFERS</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Location.jsp">LOCATION</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="AboutUs.jsp">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+		      <a href="Buy.jsp" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		      
 	         </form>
         </div>
     </nav>
@@ -64,7 +67,7 @@
   			</div>
   			<div class="col-xl-4">
 	  			<h5 style=" font-family: sans-serif; margin-top: 50px; margin-left: 80px; color: white;">New&nbsp;<a href="#" id="imax">IMAX</a>&nbsp;Experience</h5>
-	  			<a href="Seats.html?movie=Oppenheimer" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn1">BOOK NOW</a></div>
+	  			<a href="Seats.jsp?movie=Oppenheimer" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn1">BOOK NOW</a></div>
 	</div> <br>
 	  
 	<div class="row row80">
@@ -88,7 +91,7 @@
   			</div>
   			<div class="col-xl-4">
 	  			<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | IMAX </h5>
-	  			<a href="Seats.html?movie=Venom: The Last Dance" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn2">BOOK NOW</a></div>
+	  			<a href="Seats.jsp?movie=Venom: The Last Dance" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn2">BOOK NOW</a></div>
 	</div> <br>
 	
 	<div class="row row81">
@@ -112,7 +115,7 @@
   			</div>
   			<div class="col-xl-4">
 	  			<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | LUXE </h5>
-	  			<a href="Seats.html?movie=The Wild Robot" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn3">BOOK NOW</a></div>
+	  			<a href="Seats.jsp?movie=The Wild Robot" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn3">BOOK NOW</a></div>
 	</div> <br>
 	
 	<div class="row row82">
@@ -136,7 +139,7 @@
   			</div>
   			<div class="col-xl-4">
 	  		<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | IMAX </h5>
-	  		<a href="Seats.html?movie=Red One" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn4">BOOK NOW</a></div>
+	  		<a href="Seats.jsp?movie=Red One" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn4">BOOK NOW</a></div>
 	</div> <br>
 
 
@@ -161,7 +164,7 @@
   			</div>
   			<div class="col-xl-4">
 	  			<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | LUXE </h5>
-	  			<a href="Seats.html?movie=It Ends With Us" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn5">BOOK NOW</a></div>
+	  			<a href="Seats.jsp?movie=It Ends With Us" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn5">BOOK NOW</a></div>
 	</div> <br>
 
 	<div class="row row84">
@@ -185,7 +188,7 @@
   			</div>
   			<div class="col-xl-4">
 	  		<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | LUXE </h5>
-	  		<a href="Seats.html?movie=Smile 2" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn6">BOOK NOW</a></div>
+	  		<a href="Seats.jsp?movie=Smile 2" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn6">BOOK NOW</a></div>
 	</div> <br>
 
 	<div class="row row84">
@@ -209,7 +212,7 @@
   			</div>
   			<div class="col-xl-4">
 	  		<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | LUXE </h5>
-	  		<a href="Seats.html?movie=Amaran" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn7">BOOK NOW</a></div>
+	  		<a href="Seats.jsp?movie=Amaran" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn7">BOOK NOW</a></div>
 	</div> <br>
 
 	<div class="row row84">
@@ -233,7 +236,7 @@
   			</div>
   			<div class="col-xl-4">
 	  		<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | LUXE </h5>
-	  		<a href="Seats.html?movie=Pushpa 2" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn8">BOOK NOW</a></div>
+	  		<a href="Seats.jsp?movie=Pushpa 2" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn8">BOOK NOW</a></div>
 	</div> <br>
 
 	<div class="row row84">
@@ -257,7 +260,7 @@
   			</div>
   			<div class="col-xl-4">
 	  		<h5 style="margin-top: 50px; margin-left: 40px; color: white;"> Digital 2D | Dolby Atmos | IMAX </h5>
-	  		<a href="Seats.html?movie=Deadpool and Wolverine" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn9">BOOK NOW</a></div>
+	  		<a href="Seats.jsp?movie=Deadpool and Wolverine" class="btn btn-primary" style="margin-top: 40px; margin-left: 120px;" id="btn9">BOOK NOW</a></div>
 	</div> <br>
 
 	</div> <!-- container --> 
@@ -281,12 +284,12 @@
 	       </div>
 		
 	  <div class="col-xl-2"> <br>
-		  <h5><a href="Buy.html">Buy Tickets</a></h5> <br>
-		  <h6><a href="Movies.html">Movies</a></h6>
-		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
-		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
-		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
-		  <h6><a href="Terms.html">Terms & Conditions</a></h6>
+		  <h5><a href="Buy.jsp">Buy Tickets</a></h5> <br>
+		  <h6><a href="Movies.jsp">Movies</a></h6>
+		  <h6><a href="DealsOffers.jsp">All Deals</a></h6> 
+		  <h6><a href="ContactUs.jsp">Contact Us</a></h6> 
+		  <h6><a href="Terms.jsp#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.jsp">Terms & Conditions</a></h6>
 	  </div>
 		
       <div class="col-xl-2"> <br>
@@ -351,27 +354,6 @@
         }
         });
     </script>
-
-	<!-- Snow Flakes -->   
-	<script>
-		const snowflakeCount = 100; // Number of snowflakes
-		const snowflakeSymbols = ["❄", "❅", "❆"]; // Snowflake shapes
-			
-		for (let i = 0; i < snowflakeCount; i++) {
-			const snowflake = document.createElement("div");
-			snowflake.classList.add("snowflake");
-			snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
-			
-			const size = Math.random() * 1.5 + 0.5; // Random size
-			snowflake.style.fontSize = size + "rem";
-			
-			snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
-			snowflake.style.animationDuration = Math.random() * 3 + 5 + "s"; // Random speed 3+1=high / 3+8=low
-			snowflake.style.opacity = Math.random();
-			
-			document.body.appendChild(snowflake);
-			}
-	</script>
 	  
 </body>
 </html>

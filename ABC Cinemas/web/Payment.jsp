@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,63 +13,64 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/png" href="images/title image.png">
 	<link href="css/Payment.css" rel="stylesheet" type="text/css">
+	 <!-- PayPal SDK -->
+     
 </head>
   <body>
 	  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="Home Page.html"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.jsp"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
 		
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item active"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="index.jsp">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Movies.jsp">MOVIES</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.jsp">DEALS AND OFFERS</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Location.jsp">LOCATION</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="AboutUs.jsp">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+		      <a href="Buy.jsp" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		    
 	         </form>
         </div>
     </nav>
 	  <br><br><br><hr style="background-color: #303030;">
-	  <h2 style= "font-family: sans-serif; color: black; margin-right: 600px;"><center><b> Payment </b></center></h2><br>
+	  <h2 style= "font-family: sans-serif; color: black;  margin-right: 600px;"><center><b> Payment </b></center></h2><br>
 	
  		<div class="container">
         <div class="section">
             <h3>Movie Booking Summary</h3><hr>
             <div class="receipt">
-                <p id="movie_name"><b>Movie Name:</b> </p>
-                <p id="seats"><b>Seats:</b> </p>
-                <p>Price per Seat: LKR.1200.00</p> <br>
-                <p class="total" id="total_price"><b>Total Price:</b></p>
+              
+                <p id="price">Total Price: LKR.1200</p><br>
+                <p class="total" id="total_price"><b>Total Price: LKR.1200</b></p>
             </div>
         </div>
 
         <div class="section">
             <h3>Payment Method</h3><hr>
+             <form action="CompleteBookingServlet" method="POST">
                <div class="payment-methods">
                 <!-- PayPal Button -->
-                <div id="paypal-button-container"></div>
-
-                <div class="card-form">
+               
+                <div id="paypal-button-container" ></div>
+         
+                <center><div class="card-form">
                     <input type="text" placeholder="Card Number" required id="cd">
                     <input type="text" placeholder="Expiration (MM/YY)" required id="ex">
                     <input type="text" placeholder="CVV" required id="cvv">
                     <input type="text" placeholder="First Name" required id="fname">
-                    <input type="text" placeholder="Last Name" required id="lname">
-                    <input type="text" placeholder="Email" required id="email">
+                    <input type="text"  placeholder="Last Name" required id="lname">
+                    <input  type="email" name="email" placeholder="Email" required id="email">
 					
-                </div>
-					<!--<label><input type="checkbox" required>&nbsp;&nbsp;I Agree to the Terms and Coniditons.</label>
-                <button class="place-order">Place Order</button>-->
+                </div></center>
 				
 				<div class="buttons">
-            		<a href="Movies.html" class="back-btn" id="back">BACK</a>
-            		<a href="#" class="pay-now-btn" id="pay">PAY NOW</a>
+            		<a href="Movies.jsp" class="back-btn" id="back">BACK</a>
+            		<input  class="pay-now-btn"  type="submit" value="PAY NOW" id="pay"></a>
         		</div>
-           	   </div> <br>
+           	   </div><form> <br>
 			
 			<input type="checkbox" id="check1" required>
             <label for="check1">I agree to the <a href="Terms.html" id="tnm">Terms & Conditions</a></label>
@@ -80,12 +83,12 @@
       	<div class="col-xl-5"> <br>
 		  <h5 style=" font-family: sans-serif;"> To always be informed!</h5> 
 			<h2 style="font-family: 'cooper-black-std';"><b>Sign up for</b></h2> <h4 style=" font-family: sans-serif;">get all our Deals and Offers.</h4>
-			<a href="Login.html" class="btn btn-primary">SUBSCRIBE</a><br><br>
-		    <p style=" font-family: sans-serif; font-size: 12px;">@2024 ABC Cinemas All Rights Â© Reserved.<br> Developed by Group - i</p>
+			<a href="Login.jsp" class="btn btn-primary">SUBSCRIBE</a><br><br>
+		    <p style=" font-family: sans-serif; font-size: 12px;">@2024 ABC Cinemas All Rights © Reserved.<br> Developed by Group - i</p>
 	    </div>
 		    	
 	    <div class="col-xl-2"><br>
-		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html#feedback">Feedback</a></h5> <br>
+		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.jsp#feedback">Feedback</a></h5> <br>
 		  <h6 style=" font-family: sans-serif;"> Digital (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Gold (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
@@ -94,12 +97,12 @@
 	    </div>
 		
 	    <div class="col-xl-2"> <br>
-		  <h5><a href="Buy.html">Buy Tickets</a></h5> <br>
-		  <h6><a href="Movies.html">Movies</a></h6>
-		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
-		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
-		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
-		  <h6><a href="Terms.html">Terms & Conditions</a></h6>
+		  <h5><a href="Buy.jsp">Buy Tickets</a></h5> <br>
+		  <h6><a href="Movies.jsp">Movies</a></h6>
+		  <h6><a href="DealsOffers.jsp">All Deals</a></h6> 
+		  <h6><a href="ContactUs.jsp">Contact Us</a></h6> 
+		  <h6><a href="Terms.jsp#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.jsp">Terms & Conditions</a></h6>
 	    </div>
 		
         <div class="col-xl-2"> <br>
@@ -177,6 +180,8 @@
 		  if (totalPrice) {
     		  document.getElementById('total_price').textContent = `Total Price: LKR.${totalPrice}`;
 		  }
+		  
+		  
 	  </script>
 	  
 </body>

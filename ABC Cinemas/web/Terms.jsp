@@ -1,10 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ABC Cinemas - Terms | Conditions</title>
+    <title>ABC Cinemas - Online Movie Tickets Booking</title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 	<!-- My CSS File -->
@@ -13,27 +15,27 @@
   </head>
   <body>
 	  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="Home Page.html"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.jsp"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
 		
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="index.jsp">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Movies.jsp">MOVIES</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="DealsOffers.jsp">DEALS AND OFFERS</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Location.jsp">LOCATION</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="AboutUs.jsp">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+		      <a href="Buy.jsp" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		    
 	         </form>
         </div>
     </nav>
-	  <br><section id="terms"><br><br><hr>
+	  <br><br><br><hr>
 	  <h3 style= "font-family: sans-serif; color: white; margin-right: 870px;"><center><b> Our Terms & Conditions </b></center></h3><br> 
 	  
-          
+	  <section id="terms">
 	  <h4 style="font-family: sans-serif; color: white;  margin-left: 80px;"><b> Introduction </b></h4>
 	      <p style="margin-left: 90px; margin-right: 90px; text-align: justify; color: lightgray;"> ABC Cinemas Private Limited, a company driven in Sri Lanka (referred to as "ABC CINEMAS," "www.abccinemas.com," "we," "us," or "our" herein) owns and operates www.abccinemas.com. PLEASE READ THESE TERMS OF USE BEFORE USING THIS SITE. If you use this Site or click on a box stating that you are agreeing to or accept these terms, you represent that you will accept and agree to these terms of use. <br> You authorize us to use your email address for marketing and promotional communications, unless you agree to these terms of use, after which you are not permitted to use this Site. You acknowledge and agree that these terms of use are supported by consideration, reasonable and valuable, which the receipt and adequacy of which is hereby acknowledged.<br> Without limiting the generality of the foregoing, you acknowledge that consideration includes your use of this Site, receipt of data, materials and information available at or through this Site, and the possibility of our use or display of your Submissions (as defined below in Section 3, entitled 'SUBMISSIONS'). </p> <br>
 	  
@@ -128,12 +130,12 @@
       <div class="col-xl-5"> <br>
 		  <h5 style=" font-family: sans-serif;"> To always be informed!</h5> 
 			<h2 style="font-family: 'cooper-black-std';"><b>Sign up for</b></h2> <h4 style=" font-family: sans-serif;">get all our Deals and Offers.</h4>
-			<a href="Login.html" class="btn btn-primary">SUBSCRIBE</a><br><br>
+			<a href="Login.jsp" class="btn btn-primary">SUBSCRIBE</a><br><br>
 		    <p style=" font-family: sans-serif; font-size: 12px;">@2024 ABC Cinemas All Rights © Reserved.<br> Developed by Group - i</p>
 	  </div>
 		    	
 	  <div class="col-xl-2"><br>
-		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html#feedback">Feedback</a></h5> <br>
+		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.jsp#feedback">Feedback</a></h5> <br>
 		  <h6 style=" font-family: sans-serif;"> Digital (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Gold (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
@@ -142,12 +144,12 @@
 	       </div>
 		
 	  <div class="col-xl-2"> <br>
-		  <h5><a href="Buy.html">Buy Tickets</a></h5> <br>
-		  <h6><a href="Movies.html">Movies</a></h6>
-		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
-		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
-		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
-		  <h6><a href="Terms.html#terms">Terms & Conditions</a></h6>
+		  <h5><a href="Buy.jsp">Buy Tickets</a></h5> <br>
+		  <h6><a href="Movies.jsp">Movies</a></h6>
+		  <h6><a href="DealsOffers.jsp">All Deals</a></h6> 
+		  <h6><a href="ContactUs.jsp">Contact Us</a></h6> 
+		  <h6><a href="Terms.jsp#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.jsp#terms">Terms & Conditions</a></h6>
 	  </div>
 		
       <div class="col-xl-2"> <br>

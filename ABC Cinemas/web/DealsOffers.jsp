@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,20 +16,21 @@
   </head>
   <body>
 	  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="Home Page.html"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.jsp"><img src="images/New Logo Black.png" alt="" width="150" height="80" class="img-fluid" style="margin-left: 15px; padding-bottom: 5px; padding-top: 0px;"></a>
 		
   	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
   	      <ul class="navbar-nav mr-auto">
-  	        <li class="nav-item"> <a class="nav-link" href="Home Page.html">HOME <span class="sr-only">(current)</span></a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Movies.html">MOVIES</a> </li>
-  	        <li class="nav-item active"> <a class="nav-link" href="DealsOffers.html">DEALS AND OFFERS</a> </li>
-  	        <li class="nav-item"> <a class="nav-link" href="Location.html">LOCATION</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="AboutUs.html">ABOUT US</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="index.jsp">HOME <span class="sr-only">(current)</span></a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Movies.jsp">MOVIES</a> </li>
+  	        <li class="nav-item active"> <a class="nav-link" href="DealsOffers.jsp">DEALS AND OFFERS</a> </li>
+  	        <li class="nav-item"> <a class="nav-link" href="Location.jsp">LOCATION</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="AboutUs.jsp">ABOUT US</a> </li>
           </ul>
 			 <form class="form-inline my-2 my-lg-0">
-		      <a href="Buy.html" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
-		      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+		      <a href="Buy.jsp" class="btn btn-outline-success my-2 my-sm-0">Buy Tickets</a>
+		    
 	         </form>
         </div>
     </nav>
@@ -86,12 +89,10 @@
          </p></div>
        </div>
 		  
-	<div class="container"> <hr style="background-color: darkgrey;"> </div><br>
+		  <div class="container"> <hr style="background-color: darkgrey;"> </div><br>
 		  
-        <p style="margin-left: 50px; margin-right: 50px; text-align: justify; color: white; font-size: 20px;"> "Unlock exclusive benefits at ABC Cinemas! These special offers are available exclusively only to our <b>Registered customers.</b> Don’t miss out, Register now and enjoy exciting rewards designed just for you!" </p> 	  
-		  
-		  
-		  
+		  <p style="margin-left: 50px; margin-right: 50px; text-align: justify; color: white; font-size: 20px;"> "Unlock exclusive benefits at ABC Cinemas! Our four special offers are available exclusively to our registered customers. Don’t miss out—register now and enjoy exciting rewards designed just for you!" </p> 
+  
 	  </div> <!-- End of container -->
 	  
   <br><br><br>
@@ -99,12 +100,12 @@
       <div class="col-xl-5"> <br>
 		  <h5 style=" font-family: sans-serif;"> To always be informed!</h5> 
 			<h2 style="font-family: 'cooper-black-std';"><b>Sign up for</b></h2> <h4 style=" font-family: sans-serif;">get all our Deals and Offers.</h4>
-			<a href="Login.html" class="btn btn-primary">SUBSCRIBE</a><br><br>
+			<a href="Login.jsp" class="btn btn-primary">SUBSCRIBE</a><br><br>
 		    <p style=" font-family: sans-serif; font-size: 12px;">@2024 ABC Cinemas All Rights © Reserved.<br> Developed by Group - i</p>
 	  </div>
 		    	
 	  <div class="col-xl-2"><br>
-		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.html#feedback">Feedback</a></h5> <br>
+		  <h5 style=" font-family: sans-serif;"><a href="ContactUs.jsp#feedback">Feedback</a></h5> <br>
 		  <h6 style=" font-family: sans-serif;"> Digital (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Gold (2d), (3d) </h6>
 		  <h6 style=" font-family: sans-serif;"> Atmos Dolby (2d), (3d) </h6>
@@ -113,12 +114,12 @@
 	       </div>
 		
 	  <div class="col-xl-2"> <br>
-		  <h5><a href="Buy.html">Buy Tickets</a></h5> <br>
-		  <h6><a href="Movies.html">Movies</a></h6>
-		  <h6><a href="DealsOffers.html">All Deals</a></h6> 
-		  <h6><a href="ContactUs.html">Contact Us</a></h6> 
-		  <h6><a href="Terms.html#privacy">Privacy Policies</a></h6> 
-		  <h6><a href="Terms.html">Terms & Conditions</a></h6>
+		  <h5><a href="Buy.jsp">Buy Tickets</a></h5> <br>
+		  <h6><a href="Movies.jsp">Movies</a></h6>
+		  <h6><a href="DealsOffers.jsp">All Deals</a></h6> 
+		  <h6><a href="ContactUs.jsp">Contact Us</a></h6> 
+		  <h6><a href="Terms.jsp#privacy">Privacy Policies</a></h6> 
+		  <h6><a href="Terms.jsp">Terms & Conditions</a></h6>
 	  </div>
 		
       <div class="col-xl-2"> <br>
@@ -180,17 +181,17 @@
       viewMoreButton.classList.add('hidden');
      }
     </script>
-
-    	<!-- Navbar Shading -->
-      <script>
-        window.addEventListener("scroll", function() {
-          const navbar = document.querySelector(".navbar");
-          if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-          } else {
-          navbar.classList.remove("scrolled");
-          }
-          });
-      </script>
+	  
+	  <!-- Navbar Shading -->
+    <script>
+	    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+        } else {
+        navbar.classList.remove("scrolled");
+        }
+        });
+    </script>
 </body>
 </html>

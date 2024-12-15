@@ -7,23 +7,8 @@
 .row.row10 .col-xl-3 .card.col-md-4.col-xl-12 {
 	background-color: black;
     overflow: hidden;
-    transition: transform 0.3s ease;
+ 
 	border-radius: 0px;
-}
-.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top {
-	transition: transform 0.3s ease;
-	border-radius: 0px;
-}
-.row.row10 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
-	transform: scale(1.1);
-}
-.card.col-md-4.col-xl-12 .card-body .btn.btn-primary {
-	border-radius: 0;
-	padding-bottom: 1px;
-	padding-top: 1px;
-}
-.card.col-md-4.col-xl-12 .card-body .btn.btn-primary:hover{
-	background-color: #00008B;
 }
 
 /* second row */
@@ -34,16 +19,9 @@
 .row.row11 .col-xl-3 .card.col-md-4.col-xl-12 {
 	background-color: black;
     overflow: hidden;
-    transition: transform 0.3s ease;
 	border-radius: 0px;
 }
-.row.row11 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
-	transform: scale(1.1);
-}
 
-.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top{
-	transition: transform 0.3s ease;
-}
 
 /* third row */
 .container .row.row12 {
@@ -56,29 +34,9 @@
     transition: transform 0.3s ease;
 	border-radius: 0px;
 }
-.row.row12 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
-	transform: scale(1.1);
-}
-.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top{
-	transition: transform 0.3s ease;
-}
+
 
 /* fourth row */
-
-/* Blue toptpbottom slide transition */
-.card::before {
-  content: '';
-  position: absolute;
-  top: -100%; /* Initially hidden above */
-  left: 0;
-  width: 110%;
-  height: 88%;
-  background: rgba(0, 150, 255, 0.5); /* Light Blue overlay with opacity */
-  transition: top 0.3s ease-in-out;
-}
-.card:hover::before {
-  top: 0; /* Slides down on hover */
-}
 .container .row.row14 {
 	background-color: black;
 	color: white;
@@ -89,12 +47,8 @@
     transition: transform 0.3s ease;
 	border-radius: 0px;
 }
-.row.row14 .col-xl-3 .card.col-md-4.col-xl-12:hover img{
-	transform: scale(1.1);
-}
-.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top{
-	transition: transform 0.3s ease;
-}
+
+
 
 /* Search bar */
 .search-container{
