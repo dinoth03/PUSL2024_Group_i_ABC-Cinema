@@ -8,6 +8,10 @@
         <servlet-name>BookingServlet</servlet-name>
         <servlet-class>BookingServlet.BookingServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CompleteBookingServlet</servlet-name>
+        <servlet-class>CompeteBookingServ.CompleteBookingServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CinemasServ</servlet-name>
         <url-pattern>/CinemasServ</url-pattern>
@@ -15,5 +19,9 @@
     <servlet-mapping>
         <servlet-name>BookingServlet</servlet-name>
         <url-pattern>/BookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CompleteBookingServlet</servlet-name>
+        <url-pattern>/CompleteBookingServlet</url-pattern>
     </servlet-mapping>
 </web-app>
