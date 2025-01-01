@@ -1,0 +1,491 @@
+body {
+    font-family: Arial, sans-serif;
+	background-color: black;
+	flex-wrap: wrap;
+}
+
+.slider {
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    perspective: 1000px;
+    position: relative;
+    align-items:center;
+  }
+.box1{ background-image: url("../images/sonic 3 soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+.box2{
+  background-image: url("../images/captain america soon.jpeg");
+    background-size:cover;
+    background-position:center center;}
+.box3{
+  background-image: url("../images/kraven the soon.jpeg");
+    background-size:cover;
+    background-position:center center;}
+.box4{
+  background-image: url("../images/moana-2-soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+.box5{
+  background-image: url("../images/mufasa-soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+.box6{
+  background-image: url("../images/wicked soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+.box7{
+  background-image: url("../images/gladiator 2 soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+
+.slider [class*="box"] {
+  /*   float: left; */
+    overflow: hidden;
+    border-radius:0px;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    position:absolute;
+  }
+.slider [class*="box"]:nth-child(7),
+.slider [class*="box"]:nth-child(1) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.2) translate(-50%,-50%);
+    top: 10%;
+    z-index:1;
+  }
+.slider [class*="box"]:nth-child(2),
+.slider [class*="box"]:nth-child(6) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.4) translate(-50%,-50%);
+    top: 20%;
+    z-index:2;
+  }
+.slider [class*="box"]:nth-child(3),
+.slider [class*="box"]:nth-child(5) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.6) translate(-50%,-50%);
+    top: 30%;
+    z-index:3;
+  }
+.slider [class*="box"]:nth-child(4) {
+    width: 60vw;
+    height: 60vh;
+    border-color: #c92026;
+    color: #fff;
+    transform: scale(1) translate(-50%,-50%);
+    top: 50%;
+    z-index:4;
+  }
+.slider [class*="box"]:nth-child(1){
+    left:-13%;}
+.slider [class*="box"]:nth-child(2){
+    left:-5%;}
+.slider [class*="box"]:nth-child(3){
+    left:10%;}
+.slider [class*="box"]:nth-child(4){
+    left:50%;}
+.slider [class*="box"]:nth-child(5){
+    left:71%;}
+.slider [class*="box"]:nth-child(6){
+    left:85%;}
+.slider [class*="box"]:nth-child(7){
+    left:100%;}
+.slider .firstSlide {
+      -webkit-animation:  firstChild 1s;
+      animation:  firstChild 1s;
+  }
+  /*Animation for buyers landing page slider*/
+@-webkit-keyframes firstChild {
+      0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+@keyframes firstChild {
+     0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+
+/* navbar always on the top*/
+.navbar {
+  position: fixed; /* Keeps it fixed to the viewport */
+  top: 0;
+  width: 100%; /* Full width of the viewport */
+  /*background-color: #333; /* Dark background for visibility */
+  /*color: white;*/
+  padding: 1em 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  padding-bottom: 0px;
+  padding-top: 0px;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+}
+.navbar.scrolled {
+  opacity: 0.8; /* Faded effect */
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+}
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar nav ul li {
+  margin: 0 1em;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+  color: #ddd;
+}
+.col-lg-3 .card.col-md-4.col-lg-12 .card-img-top.img-fluid {
+	transition: transform 0.3s ease;
+}
+
+
+.row .col-lg-3 .card.col-md-4.col-lg-12 {
+	 overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.row .col-lg-3 .card.col-md-4.col-lg-12:hover img{
+	transform: scale(1.1);
+}
+
+
+  /* Navbar Buttong making */
+#navbarSupportedContent1 .form-inline.my-2.my-lg-0 .btn.btn-outline-success.my-2.my-sm-0 {
+    /*color: #FFFFFF;
+    background-color: #0096FF; */
+	border-radius: 0px;
+	padding-left: px;
+	padding-right: px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-left: 1px;
+	margin-right: 4px;
+	border: 1px solid transparent; /* Match the border color to the hover color */
+    color: gray; /* Text Color */
+    background-color: transparent; /* Background is transparent */
+	text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+#navbarSupportedContent1 .form-inline.my-2.my-lg-0 .btn.btn-outline-success.my-2.my-sm-0:hover {
+	/*background-color: #00008B;*/
+	color: white; /* Make text visible */
+    background-color: #007BFF; /* background color */
+}
+
+.container-fluid .navbar.navbar-expand-lg.navbar-light.bg-light {
+	padding-bottom: 5px;
+	padding-top: 3px;
+}
+
+.row .col-lg-4 .card.col-md-4.col-lg-12 {
+    background-color: transparent;
+}
+
+.list-group.list-group-flush .list-group-item .list-link {
+	 background-color: transparent;
+}
+
+
+/* Scollup Button */
+#scrollUpButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #0096FF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+#scrollUpButton:hover {
+    background-color: #0056b3;
+}
+
+
+/* Preloader Styles */
+        #preloader {
+        position: fixed;
+  		top: 0;
+ 		left: 0;
+  		width: 100%;
+  		height: 100%;
+  		background-color: #000021;/*#030020;*/ /* Replace with your desired color */
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;
+  		z-index: 9999;
+		}
+
+
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand .img-fluid {
+	margin-left: 5px;
+}
+.row .col-xl-5 {
+	margin-left: 15px;
+}
+
+/* Caraousel Settings */
+ .carousel-container {
+    width: 100%; /* Occupies the full width of the screen */
+    height: 100vh; /* Full viewport height */
+	overflow: hidden; /* Prevents content overflow */
+    position: relative;  }
+	
+ .carousel-container img {
+    width: 100%; /* Scales image to fit width */
+    height: 100%; /* Ensures it fills height */
+    object-fit: cover; /* Crops the image while preserving aspect ratio */
+        }
+.carousel-item img {
+    width: 100%; /* Makes the image scale to the container width */
+    height: 100vh; /* Adjusts the height to fit the screen */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+.carousel-item {
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    width: 100%; /* Makes the container fit the width */
+    height: 100vh; /* Sets the height to fit the screen */
+}
+
+/* Book Now buttons */
+.card.col-md-4.col-lg-12 .card-body .btn.btn-primary {
+	border-radius: 0;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+.card.col-md-4.col-lg-12 .card-body .btn.btn-primary:hover {
+	background-color: #00008B;
+}
+
+/* Subscribe Button */
+.row .col-xl-5 .btn.btn-primary {
+	border-radius: 0;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	cursor: pointer;
+  	position: relative;
+	border: 2px solid rgb(0, 0, 139, 1);
+	background-color: transparent;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.row .col-xl-5 .btn.btn-primary::before{
+	content: '';
+  	position: absolute;
+  	inset: 0;
+  	margin: auto;
+  	width: 50px;
+  	height: 50px;
+  	border-radius: inherit;
+  	scale: 0;
+  	z-index: -1;
+  	background-color: rgb(0, 0, 139, 1);
+  	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.row .col-xl-5 .btn.btn-primary:hover::before{
+	scale: 3;
+}
+.row .col-xl-5 .btn.btn-primary:hover{
+	background-color: #00008B;
+	scale: 1.1;
+    box-shadow: 0 0px 20px rgba(0, 0, 139, 1);
+}
+.row .col-xl-5 .btn.btn-primary:active{
+	scale: 1;
+}
+
+/* Logo Transition */
+center a img {
+	margin-left: 5px;
+	overflow: hidden;
+  transition: transform 0.5s ease;	
+}
+center a img:hover{
+	transform: scale(1.1);
+}
+
+.row.row1 {
+	background-color: black;
+}
+.row.row2 {
+	background-color: black;
+}
+.row.row3 {
+	background-image: url("../images/footer image.jpg");
+	color: white;
+}
+
+.row.row1 .col-lg-3 .card.col-md-4.col-lg-12 {
+	border-radius: 0;
+}
+.col-lg-3 .card.col-md-4.col-lg-12 .card-img-top.img-fluid {
+	border-radius: 0;
+}
+.row.row2 .col-lg-3 .card.col-md-4.col-lg-12 {
+	border-radius: 0;
+}
+
+.col-xl-2 h5 a {
+	color: white;
+	text-decoration: none;	
+}
+.col-xl-2 h5 a:hover{
+	text-decoration: underline;
+}
+
+.col-xl-2 h6 a {
+	color: white;
+	text-decoration: none;
+}
+.col-xl-2 h6 a:hover{
+	text-decoration: underline;
+}
+.row.row1 .col-lg-3 .card.col-md-4.col-lg-12 {
+	background-color: black;
+	color: white;
+}
+
+h4 center b {
+    color: white;
+}
+body hr {
+	background-color: white;
+}
+
+.row.row2 .col-lg-3 .card.col-md-4.col-lg-12{
+	background-color: black;
+	color: white;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand .img-fluid {
+	overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand .img-fluid:hover{
+	transform: scale(1.1);
+	
+/* Offer and IMAX Photos  */
+}
+.row.row4 .col-xl-9 img {
+	overflow: hidden;
+  transition: transform 0.4s ease;
+}
+.row.row4 .col-xl-9 img:hover{
+	transform: scale(1.1);
+}
+
+.row.row5 .col-xl-9 img {
+	overflow: hidden;
+  transition: transform 0.4s ease;
+}
+.row.row5 .col-xl-9 img:hover{
+	transform: scale(1.1);
+}
+
+/* Body Buttons */
+#ViewMovies{
+	border-radius: 0;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	margin-left: 250px;
+	border: 1px solid transparent; /* Match the border color to the hover color */
+    color: white;
+    background-color: transparent; /* Background is transparent */
+	text-transform: uppercase;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    cursor: pointer;
+    transition: all 0.3s ease;
+	font-size: 18px;
+}
+#ViewMovies:hover{
+	background-color: #00008B;
+	color: white;
+}
+
+#Moredeals{
+	border-radius: 0;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	margin-left: 90px;
+	border: 1px solid transparent; /* Match the border color to the hover color */
+    color: mediumblue;
+    background-color: transparent; /* Background is transparent */
+	text-transform: uppercase;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    cursor: pointer;
+    transition: all 0.3s ease;
+	font-size: 16px;
+}
+#Moredeals:hover{
+	background-color: #00008B;
+	color: white;
+}
+
+#Moreupdates{
+	border-radius: 0;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	margin-left: 85px;
+	border: 1px solid transparent; /* Match the border color to the hover color */
+    color: mediumblue;
+    background-color: transparent; /* Background is transparent */
+	text-transform: uppercase;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    cursor: pointer;
+    transition: all 0.3s ease;
+	font-size: 16px;
+}
+#Moreupdates:hover{
+	background-color: #00008B;
+	color: white;
+}
+
+/* Snow Flakes */
+.snowflake {
+	position: absolute;
+	top: -10px;
+	color: white;
+	font-size: 1rem;
+	animation: fall linear infinite;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(110vh);
+		opacity: 0;
+	}
+}
+
+#logout{
+	color: gray;
+	border-color: transparent;
+}
+#logout:hover{
+	color: white;
+	background-color: red;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+ 
