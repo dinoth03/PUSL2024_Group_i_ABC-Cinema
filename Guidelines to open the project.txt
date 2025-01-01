@@ -1,0 +1,32 @@
+> Resources :- 
+JDK - 21
+Tomcat Server - 10.1
+Eclipse Workspace - IDE
+MySQL Workbench - 8.0.40
+"Our used Connectors and others are in our file"
+
+> Importing
+* Import our SQL file "Dump202412140" to your MySQL Workbench. 
+* Launch Eclipse and Go to File -> Import projects from file System or Archive -> Open Our file "Group i - ABC Cinemas -> ABCCINEMA".
+* Add the Tomcat Server to the Eclipse IDE.
+* Run the project -> Select the Tomcat server -> Click Next -> Click Finish
+
+> Main Flow
+* Go to Movies page on our Navigation Bar ( or you can click any "Book Now" button on the Home page, Movies Page and Buy Tickets Page ) then you will direct to the Selection page.
+* Select any date, time and a seat -> Click "Book" button. 
+* Use your private PayPal developer account and you can see the succeed of the PayPal Sandbox Configuration. 
+* Then you can enter any numbers to the Card Payment fillings and then enter your Valid Email Address the hit the "Pay Now" button. Now you can check your Email inbox you will get an Email notification from this website.
+
+> Other
+* You can see Customer Feedback on the "Contact Us" page or Go to Footer -> Click Feedback.
+* Fill the form and click submit then check the database's table "contacts" and it will updated.
+
+* You can add/edit/delete a movie to the Movies page via the database.
+	- Search for a movie and copy the "Image address" from a web browser -> Go to "movies" table of the database -> fill 	  the details and paste the Image Address in the image column -> Click Apply.
+	- Refresh the Movies Page and you can see the new Movie that you applied.
+
+* When a user login or Signup those details also stored in the database's "users" table.
+
+> Implementation with jsp and servlets.
+* Check "CompleteBookingServlet.Java" to check the implementation of the Email notification system.
+* And check other Servlet.Java files to check the other processes.
