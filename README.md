@@ -7,30 +7,27 @@ Proud to introduce a project that blends web technologies, responsive design, an
 ## 🔍 Why is this exciting?
 
 This system isn’t just a website — it’s a full-fledged movie booking experience:
-✅ Browse now-showing movies with search & filtering
-✅ Book favorite seats with real-time availability & conflict handling
-✅ Select date, time, and get automated ticket confirmation via email
-✅ Integrated payment system (Credit/Debit + PayPal via sandbox)
-✅ Secure login/signup for personalized features & booking history
-✅ Feedback system with star ratings to help improve service
-✅ Admin portal to manage movies, offers, and contact data
-✅ Designed to be responsive, accessible, and user-friendly
+- ✅ Browse now-showing movies with search & filtering
+- ✅ Book favorite seats with real-time availability & conflict handling
+- ✅ Select date, time, and get automated ticket confirmation via email
+- ✅ Integrated payment system (Credit/Debit + PayPal via sandbox)
+- ✅ Secure login/signup for personalized features & booking history
+- ✅ Feedback system with star ratings to help improve service
+- ✅ Admin portal to manage movies, offers, and contact data
+- ✅ Designed to be responsive, accessible, and user-friendly
 
 ## 🧠 Designed for:
 
-🎟️ Moviegoers looking for a simple, fast, and interactive online booking experience
-📈 Cinema operators aiming to digitize and automate ticket sales
-🧑‍💻 Web developers & learners exploring full-stack web systems
+- 🎟️ Moviegoers looking for a simple, fast, and interactive online booking experience
+- 📈 Cinema operators aiming to digitize and automate ticket sales
+- 🧑‍💻 Web developers & learners exploring full-stack web systems
 
 ## 💡 Built using:
 
-HTML/CSS/JavaScript + Bootstrap for front-end
-
-Java Servlets + MySQL Workbench for back-end
-
-SMTP for email automation
-
-PayPal Sandbox for secure online payment flow
+- HTML/CSS/JavaScript + Bootstrap for front-end
+- Java Servlets + MySQL Workbench for back-end
+- SMTP for email automation
+- PayPal Sandbox for secure online payment flow
 
 💥 This isn't just an academic project — it’s a real-world demo of what smart UX and solid engineering can do for the cinema industry.
 
