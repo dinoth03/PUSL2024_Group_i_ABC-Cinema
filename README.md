@@ -35,5 +35,3 @@ PayPal Sandbox for secure online payment flow
 💥 This isn't just an academic project — it’s a real-world demo of what smart UX and solid engineering can do for the cinema industry.
 
 Let’s revolutionize how people experience the magic of movies — smarter, faster, and more connected. 🎥✨
-
-#WebDevelopment #MovieBooking #TeamProject #CinemaTech #Java #MySQL #HTMLCSSJS #PayPalIntegration #UserExperience #SmartSystems #StudentProjects #FullStackDevelopment #TechInCinema #SoftwareEngineering #ProjectShowcase
